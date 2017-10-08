@@ -1,10 +1,14 @@
-# s2ext.py
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# # -*- coding: utf-8 -*-
+"""
+ s2ext.py
+"""
 from aiohttp import web
 
 
 class S2EXT:
-    """ Scratch 2 Offline Extension Example """
+    """ Scratch 2 offline extension example """
+
     def __init__(self):
         self.volume = 0
 
