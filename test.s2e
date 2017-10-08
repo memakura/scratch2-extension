@@ -1,4 +1,4 @@
-{ "extensionName": "Extension Example",
+{ "extensionName": "s2extest (Extension Example)",
     "extensionPort": 12345,
     "blockSpecs": [
         [" ", "beep", "playBeep"],
