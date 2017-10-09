@@ -12,12 +12,13 @@ async def handle_beep(request):
     return web.Response(text="OK")
 
 async def handle_setvolume(request):
-    global volume
-    volume = int(request.match_info['vol'])
-    if volume >= 0 and volume <= 10:
+    global volume  # 忘れずに
+    tmp_volume = int(request.match_info['vol']) # いったん別の変数へ
+    if tmp_volume >= 0 and tmp_volume <= 10:
+        volume = tmp_volume
         print("set volume= " + str(volume))
     else:
-        print("out of range: " + str(volume))
+        print("out of range: " + str(tmp_volume))
     return web.Response(text="OK")
 
 app = web.Application()

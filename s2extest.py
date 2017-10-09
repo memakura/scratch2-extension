@@ -30,7 +30,7 @@ class S2EXTEST:
             self.volume = tmp_volume
             print("set volume= " + str(self.volume))
         else:
-            print("out of range: " + str(self.volume))
+            print("out of range: " + str(tmp_volume))
         return web.Response(text="OK")
 
     def main(self):
